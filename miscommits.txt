@@ -1,0 +1,17 @@
+commit 7f7827b9b6e80f3d9c11f2b5f1733bfea21a2517
+Author: GabrielaReyna <gabrielareynaflores@gmail.com>
+Date:   Mon Sep 12 11:47:11 2016 -0600
+
+    cambio en el readme
+
+commit dab14f239107e3e648da7b657cd554a7b8f2529e
+Author: GabrielaReyna <gabrielareynaflores@gmail.com>
+Date:   Mon Sep 12 11:26:39 2016 -0600
+
+    1era modificacion en mi rama
+
+commit 9a0a92269e481a16f0273da6fd5b52d0ff44bca8
+Author: GabrielaReyna <gabrielareynaflores@gmail.com>
+Date:   Tue Aug 30 11:55:37 2016 -0600
+
+    Commit inicial con readme.txt
