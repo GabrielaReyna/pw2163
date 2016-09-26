@@ -1,0 +1,32 @@
+/*Selectores*/
+/*1.- Etiquetas*/
+/*2.-Identificadores*/
+/*3.- Classes*/
+/*En orden alfabetico!*/
+
+
+/*una pagina html debe medir 1024*/
+body{ /*selector - etiqueta*/
+	/*atributo:valor;*/
+	border: 1px solid blue;
+	border-radius: 5px;
+	max-width: 1024px;
+
+}
+header{
+	/*fondo*/
+	border: 1px solid red;
+	border-radius: 5px;
+	color: white;/*letra*/
+	text-align: center;/*alineacion del texto*/
+
+}
+
+header nav ul li{
+
+	background: hotpink; 
+
+	border-radius: 5px solid yellow; /*este atributo se alica a toodos los li que estan en el ul*/
+	display: inline-block; /*rompe el modelo ecaja*/
+
+}
