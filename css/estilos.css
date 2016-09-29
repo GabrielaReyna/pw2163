@@ -1,32 +1,63 @@
 /*Selectores*/
 /*1.- Etiquetas*/
-/*2.-Identificadores*/
-/*3.- Classes*/
-/*En orden alfabetico!*/
-
-
-/*una pagina html debe medir 1024*/
-body{ /*selector - etiqueta*/
+/*2.- Identificadores*/
+/*3.- Clases*/ 
+body /*selector - etiqueta*/
+{
 	/*atributo:valor;*/
 	border: 1px solid blue;
-	border-radius: 5px;
+	border-radius: 5px ;
+	font-size: 16px ;  /*tamaño de fuente estandar (1em)*/
+	/*si se quieren cambar los tamañs de las otras fuentes,se cambia el tamaño de "fontsize"*/
+	margin: 0px auto;
 	max-width: 1024px;
-
 }
-header{
-	/*fondo*/
+footer{
+	border: 1px solid blue;
+	font-size: 0.5em;
+	text-align: center; /*Alineamos todo el texto*/
+}
+
+header
+{
+	background: blue; /*fondo*/
 	border: 1px solid red;
-	border-radius: 5px;
-	color: white;/*letra*/
-	text-align: center;/*alineacion del texto*/
-
+	color: white; /*letra*/
+	/*padding: 0px 0px 10px 0px;*/
+	text-align: center; /*alineación*/
 }
 
-header nav ul li{
+header img
+{
+	float: right;
+	margin: -60px 20px 0px 0px;
+	width: 100px; /*ancho de la imagen*/
+}
 
-	background: hotpink; 
+header nav ul li
+{
+	/*border: 1px solid yellow;*/
+	background: orange; /*color de fondo*/
+	border-radius: 5px; /*bordes redondeados*/
+	box-shadow: 2px 2px;
+	display: inline-block; /*rompe modelo de caja*/
+	margin: 0px 10px 50px 10px; /*separo las cajas*/
+	padding: 5px 10px; /*agrando los botones(interno)*/
+	width: 80px; /*ancho del botón*/
+}
 
-	border-radius: 5px solid yellow; /*este atributo se alica a toodos los li que estan en el ul*/
-	display: inline-block; /*rompe el modelo ecaja*/
+header nav ul li:hover /*mouse por encima*/
+{
+	background: white; /*color de fondo*/
+	color: orange; /*color de letra*/
+}
 
+main section{
+	margin: 15px 0px 0px 0px;
+}
+main section article{
+	/*border: 1px solid red;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 23%;
 }
