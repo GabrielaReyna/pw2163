@@ -1,0 +1,22 @@
+/*En CSS los ID van con gato (#) y las clases con punto (.)*/
+#PrimerUL{
+	display: inline-block;
+	background: blue;
+	color: white;
+
+}
+#SegundoUL{
+	background: yellow;
+	color: orange;
+}
+.explota{
+	background: blue;
+	color: red;
+
+}
+.samsung{
+	background: blue;
+	color: white;
+}
+
+
