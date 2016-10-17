@@ -1,0 +1,81 @@
+
+
+body 
+{
+	border: 1px solid blue;
+	font-family: arial;
+	font-size: 16px;
+	margin: 0px auto;
+	max-width: 1024px;
+}
+header
+{
+	background: #B3D8E8; /*color de fondo*/
+}
+form input[type="button"]
+{
+	background: green;
+	border: 0px;
+	color: white;
+}
+form
+{
+	float: right;
+	margin: -45px 15px 0px 0px;
+}
+form input
+{
+	border-radius: 5px;
+}
+header nav
+{
+	background: #0E6CB0;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 99%;
+}
+
+header nav ul li 
+{
+	color: white;
+	display: inline-block;
+	margin: 0px 20px 0px 0px;
+	padding: 8px 0px 8px 0px;
+}
+
+#logo
+{
+	
+	margin: -150px 0px 0px 0px;
+}
+#logo{
+	float: left;
+	margin: -120px 0px 0px 0px;
+}
+#seccion01 article{
+	text-align: center;
+}
+#seccion01 article img{
+	border: 5px solid rgba(150,150,150,0.3);
+	margin: 15px 0px 0px 0px;
+}
+#seccion02{
+	margin: 0 auto; /*para alinar la caja completa*/
+}
+#seccion02 article{
+	/*para tener las secciones en 3 columnas*/
+	display: inline-block; 
+	vertical-align: top; /*para que el texto se pegue hacia arriba*/
+	width: 32.8%;
+
+}
+.otraSeccion,.unaSeccion{
+	font-family: arial;
+	font-weight: bold;
+}
+.unaSeccion{
+	font-size: 4.5em;
+}
+.otraSeccion{
+	font-size: 2.5em;
+}
