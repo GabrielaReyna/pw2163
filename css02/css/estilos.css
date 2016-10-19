@@ -1,0 +1,31 @@
+body{
+	font-size: 16px; /*16px==1em*/
+	margin: 0 auto; /*para que se pegue hasta arriba del navegador)*/
+	max-width: 1078px; /*Desición de lae mpresa (lo recomendado es 1024*)*/
+	min-width: 1078px; /*para que no se salga la imagen del sticker (evitar que se haga màs chica la pagina y se salga)*/
+
+}
+header input{ /*la barrita de buscar*/
+	float: right;
+	margin-right: -150px;
+	margin-top: 15px;
+	position: relative; /*respeta el orden en que se ponen los elementos, por lo tanto el buscar queda sobre la imagen paint*/
+}
+header nav ul li{/*menu*/
+	border-bottom: 1px solid gray; /*subrayado separadito 1px de las letras*/
+	color: gray;
+	display: inline-block;/*alineados horizontalmente*/
+	font-size: 1.8em;
+
+
+}
+#granthams{/*logo de la empresa*/
+	margin-top: 20px;
+	margin-left: 25px;
+
+} 
+#paint{
+	float: right;/*la recargamos a la derecha*/
+	margin-top: 20px;
+
+}
