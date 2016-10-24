@@ -1,0 +1,20 @@
+
+body{
+	font-size: 16px; /*16px==1em*/
+	margin: 0 auto; /*para que se pegue hasta arriba del navegador)*/
+	max-width: 1078px; /*Desición de lae mpresa (lo recomendado es 1024*)*/
+	min-width: 1078px; /*para que no se salga la imagen del sticker (evitar que se haga màs chica la pagina y se salga)*/
+
+}
+header nav ul li{/*menu*/
+	
+	color: gray;
+	display: inline-block;/*alineados horizontalmente*/
+	font-size: 1.8em;
+
+
+}#red3{
+	float: right;
+	margin-top: 20px;
+	
+} 
