@@ -1,0 +1,97 @@
+
+body{
+	font-family: arial;
+	font-size: 16px; /*16px==1em*/
+	margin: 0 auto; /*para que se pegue hasta arriba del navegador)*/
+	max-width: 1024px; /*Desición de lae mpresa (lo recomendado es 1024*)*/
+	min-width: 1024px; /*para que no se salga la imagen del sticker (evitar que se haga màs chica la pagina y se salga)*/
+
+}
+
+header nav ul li{/*menu*/
+	
+	padding: 10px;
+	display: inline-block;/*alineados horizontalmente*/
+	/*font-size: 1.8em;*/
+
+
+
+}
+header nav{
+	padding-left: 0px;
+	border-bottom: dotted gray; /*subrayado separadito 1px de las letras*/
+	height: 60px;
+
+	
+}
+footer{
+	color: gray;
+}
+footer article{
+	display: inline-block;
+	
+	vertical-align: top;
+
+}
+footer article ul{
+	border-top: solid gray; /*subrayado separadito 1px de las letras*/
+	text-align: left;
+
+}
+footer article ul li{
+	list-style: none;
+	
+	text-indent: -30px;
+}
+body section{
+	vertical-align: top;
+	display: inline-block;
+	
+}
+#balance{
+	font-family: arial;
+	color: #78F14C;
+	font-size: 4em;
+	font-weight: bold
+}
+#bike{
+	vertical-align: top;
+	width: 400px;
+	height: :500px;
+}
+#buy{
+	position: relative;
+	left: 630px;
+	top: -77px;
+}
+#first{
+	font-family: arial;
+	vertical-align: top;
+	font-size: 3em;
+	font-weight: bold
+}
+#firstbike{
+	margin-top: 50px;
+}
+#logo1, #logo2, #logo3{
+	float: right;
+	margin-top: 20px;
+
+
+}
+#parrafo{
+	color: gray;
+	border-top: dotted gray; /*subrayado separadito 1px de las letras*/
+	width: 512px;
+	text-align: justify;
+}
+#primeraseccion{
+	
+}
+#years5{
+	position: relative;
+	top: -78px;
+}
+.videosimg{
+	width: 255px;
+}
