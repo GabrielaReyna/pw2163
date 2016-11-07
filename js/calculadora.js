@@ -1,5 +1,11 @@
 //Variable global. Fuera de las funciones, todas ellas la pueden utilizar
 var operador="";
+function limpiar(){
+	operador="";
+	document.calculadora.operando1.value=0;
+	document.calculadora.operando2.value=0
+	document.calculadora.resultado.value=0;
+}
 function operadores(ope) //+ - * /
 {
 	operador = ope;
