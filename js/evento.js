@@ -7,8 +7,13 @@ var inicio = function() //main
  		 url: ' https://randomuser.me/api/ ',
  		 dataType: ' json ',
   		 success: function ( data ) {
+  		 	$("#imgFoto").show();
+  		 	$("#txtNombre").show();
+  		 	
+
   		 	$("#txtNombre").val(data.results[0].name.first+ " "+data.results[0].name.last)
   		 	$("#imgFoto").attr("src", data.results[0].picture.medium )	
+  		 	$("#miArticle").html("Texto");
   		  console.log ( data.results[0].name.first+ " "+data.results[0].name.last);
   }
 });
@@ -23,3 +28,4 @@ $(document).on("ready",inicio);
 // });
 // funciones anonimas: Sin nombres, se pueden asignar a una variable. 
 // Si no se asignan a nada, sirven para ejecutarse una sola vez.
+//developer.marvel.com
