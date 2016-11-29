@@ -26,12 +26,22 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
   return $theValue;
 }
 	function validaUsuario(){
-		$u=$_POST["usuario"];
-		$c=$_POST["clave"];
+		$u=GetSQLValueString($_POST["usuario"], "text");//Limpia 
+		$c=GetSQLValueString($_POST["clave"], "text");//Limpieza con getSQLValueString
+    $respuesta= false;
 		$conexion = mysql_connect("localhost", "root", "");
-		$consulta = sprintf("select*from usuarios where usuarios");
+		$consulta = sprintf("select*from usuarios where usuarios=%s and clave=%s limit 1", $u,$c);//%s porque es un String, si fuera int se pone %D
+    $resultado= mysql_query($consulta);
+    //Esperamos un solo resultado
+    if(mysql_num_rows($resultado)==1){
+        $respuesta=true;
+
+    }
+    $arregloJSON = array('respuesta'=> $respuesta);//Variable que lee javascript -> valor
+    print json_encode($arregloJSON);
+
 	}
-	}
+	
 
 
 	//menú principal
