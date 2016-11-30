@@ -24,3 +24,9 @@ header nav ul li{
 	margin: 0 auto;
 	width: 350px;
 }
+main article /*#artAltaUsuarios*/{
+	display:none;
+	margin: 0 auto;
+	width: 250px;
+
+}

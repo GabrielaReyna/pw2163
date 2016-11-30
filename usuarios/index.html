@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  	<script type="text/javascript" src="js/eventos.js"></script>
+  	<script  src="js/eventos.js"></script>
   	
 
 </head>
@@ -23,7 +23,7 @@
 					<span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</button>
 					
 				</li>
-				<li><button class="btn btn-primary"> 
+				<li><button class="btn btn-primary" id="btnAlta"> 
 					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Alta</button>
 					
 				</li>
@@ -48,12 +48,30 @@
   				</div>
  			 <div class="panel-body">
  			 <input type="text" id="txtUsuario" class="form-control" placeholder="Nombre de usuario" autofocus>
- 			 <input type="text" id="txtClave" class="form-control" placeholder="Contraseña">
+ 			 <input type="password" id="txtClave" class="form-control" placeholder="Contraseña">
  			 <button id="validaUsuario" class="btn btn-primary btn-lg btn-block">Entrar</button>
    			 
   </div>
 </div>
 		</article>	
 	</section>
+	<main>
+		<article id="artAltaUsuarios">
+			<h2>Alta de Usuarios</h2>
+			<input type="text" id="txtUsuario" placeholder ="usuario" class="form-control">
+			<input type="text" id="txtNombre" placeholder ="nombre" class="form-control">
+			<input type="text" id="txtClave" placeholder ="clave" class="form-control">
+			<select name="txtTipo" id="txtTipo" class="form-control">
+				<option value="ninguno">Seleccione una opción</option>
+				<option value="administrador">Administrador</option>
+				<option value="invitado">Invitado</option>
+				<option value="colado">Colado</option>
+
+
+
+			</select>
+			<button class="btn btn-success btn-lg btn-block" id="btnGuardaUsuario">Guardar</button>
+		</article>
+	</main>
 </body>
 </html>

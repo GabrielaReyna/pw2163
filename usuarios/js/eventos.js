@@ -20,13 +20,13 @@ var inicioUsuarios = function(){
 				cache:false,
 				type:"POST",
 				dataType:"json",
-				url: "php/utilerias.php"
-				datos:parametros;
+				url: "php/utilerias.php",
+				datos: parametros,
 				success: function(response){
 					//Si todo sale bien
 					if(response.respuesta ==  true){ //Si el usuario y pass están correctos
-						$("#entradausuario").hide();
-						$("nav").show();
+						$("#entradausuario").hide("slow");
+						$("nav").show("slow");
 					}else{
 						alert("Datos incorrectos:(");
 					}
@@ -44,6 +44,13 @@ var inicioUsuarios = function(){
 		
 		}
 		$("#btnValidaUsuario").on("click", validaUsuario);
+		var teclaClave = function(tecla){
+			if(tecla.which == 13){ //Tecla enter 
+				validaUsuario(); //funciòn que valida usuario
+			}
+		}
+		//keypress: se ejecuta cada vez que presiono una tecla sobre el input
+		$("#txtClave").on("keypress", teclaClave);
 }
 //evento inicial
 $(document).on("ready", inicioUsuarios);

@@ -29,8 +29,10 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 		$u=GetSQLValueString($_POST["usuario"], "text");//Limpia 
 		$c=GetSQLValueString($_POST["clave"], "text");//Limpieza con getSQLValueString
     $respuesta= false;
+
 		$conexion = mysql_connect("localhost", "root", "");
-		$consulta = sprintf("select*from usuarios where usuarios=%s and clave=%s limit 1", $u,$c);//%s porque es un String, si fuera int se pone %D
+    mysql_select_db(("bd2163"));
+		$consulta = sprintf("select usuario, clave from usuarios where usuarios=%s and clave=%s limit 1", $u,$c);//%s porque es un String, si fuera int se pone %D
     $resultado= mysql_query($consulta);
     //Esperamos un solo resultado
     if(mysql_num_rows($resultado)==1){
