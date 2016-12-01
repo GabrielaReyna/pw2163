@@ -25,7 +25,7 @@ var inicioUsuarios = function(){
 				success: function(response){
 					//Si todo sale bien
 					if(response.respuesta ==  true){ //Si el usuario y pass están correctos
-						$("#entradausuario").hide("slow");
+						$("#entradaUsuario").hide("slow");
 						$("nav").show("slow");
 					}else{
 						alert("Datos incorrectos:(");
@@ -49,8 +49,14 @@ var inicioUsuarios = function(){
 				validaUsuario(); //funciòn que valida usuario
 			}
 		}
+		var Alta = function(){
+			$("#artAltaUsuarios").show("slow");
+
+		}
+
 		//keypress: se ejecuta cada vez que presiono una tecla sobre el input
 		$("#txtClave").on("keypress", teclaClave);
+		$("#btnAlta").on("click", Alta);
 }
 //evento inicial
-$(document).on("ready", inicioUsuarios);
+$(document).on("ready",inicioUsuarios);
