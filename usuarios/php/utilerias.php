@@ -45,13 +45,42 @@
     print json_encode($arregloJSON);
     
   }
+
+  function buscaUsuario(){
+    $respuesta=false;
+    $u=GetSQLValueString($_POST["usuario"], "text");
+    $conexion = mysql_connect("localhost", "root", "");
+    mysql_select_db("bd2163");
+    $consulta = sprintf("select * from usuarios where usuario=%s",$u);  //%S S=por que viene string, si fuera int pusieramos %D
+    $resultado = mysql_query($consulta);
+
+    if(mysql_num_rows($resultado)>0){
+      $respuesta = true;
+      if($registro = mysql_fetch_array($resultado)){
+        $arregloJSON = array('respuesta' => $respuesta,
+                              'nombre' => $respuesta,["nombre"],
+                              'clave' => $respuesta,["clave"],
+                              'tipo' => $respuesta,["tipousuario"],
+                              );
+      }
+    }else{
+
+      //si no hay registros
+      $arregloJSON = array('respuesta' => $respuesta);
+      $
+    }
+    print json_encode($arregloJSON);
+
+  }
 //menu principal
   $opcion = $_POST["opcion"];
   switch ($opcion) {
     case 'valida':
       validaUsuario();
       break;
-    
+    case 'buscaUsuario':
+          buscaUsuario();
+          break;
     default:
       # code...
       break;
